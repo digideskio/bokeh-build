@@ -38,6 +38,12 @@ if [[ -z "$dtag" && ! -z "$ptag" && ! -z "$rtag"]]; then
 
     # CHANGELOG generation
     python issues.py -p $ptag -r $rtag
+    ret=$?
+    if [ $ret -ne 0 ]; then
+        echo "Exiting because CHANGELOG generation failed."
+        echo "Check you actually have a bokeh/sphinx/source/docs/releases/<tag>/.rst file."
+        exit 1
+    fi
     git add ../.
     git commit -m "Updating CHANGELOG."
 
