@@ -1,3 +1,72 @@
+2015-06-24    0.9.1:
+--------------------
+  * Callback Action, serverless interactivity in static plots
+  * Hover inspection along lines
+  * Client side LOD downsampling for interactive tools
+  * Full User guide rewrite
+  * Reduce BokehJS boilerplate and switch to use browserify
+  * Several example bugfixes
+  * tasks:
+    - #850 [docs] Clarify how axes can be labelled
+  * bugfixes:
+    - #1255 [docs] Bokeh.embed.components second parameter not optional
+  * features:
+    - #1727 Add categorical y axis
+    - #1754 `to_bokeh` ignores alpha
+    - #1873 [docs] Palette argument for charts not well documented
+  * bugfixes:
+    - #1926 [docs] Tap_select tool is actually tap
+  * features:
+    - #2100 Fix handling of initial columns in crossfilter
+  * bugfixes:
+    - #2161 Color tuples not supported 
+    - #2176 Fix error: unable to parse uri to data
+    - #2282 [starter] [tests] Testmatrix script not in sync with bep 2
+  * tasks:
+    - #2302 Updating bokeh server image
+  * bugfixes:
+    - #2303 [build] Tagging on release produce wrong names in binstar packages
+    - #2306 [bokehjs] [regression] Fix issues preventing bokehjs 0.9 working on jsfiddle site
+  * tasks:
+    - #2308 [build] [docs] Improve some tooling around version reporting
+  * bugfixes:
+    - #2311 [bokehjs] [docs] Broken link to help pages from bokeh plots
+  * tasks:
+    - #2313 [docs] Sampledata.download() defaults to home directory
+    - #2320 Remove extra whitespace
+    - #2322 [docs] [doc] changed `tap_select` to `tap`
+  * bugfixes:
+    - #2329 Diamond/diamondcross both show diamonds
+  * features:
+    - #2335 Tab completion for splattable lists
+  * bugfixes:
+    - #2336 [docs] Categorial heatmap gallery example missing (bad path)
+  * tasks:
+    - #2337 [docs] Change binstar.org references to anaconda.org references
+  * bugfixes:
+    - #2338 Valueerror: min() arg is an empty sequence
+  * tasks:
+    - #2342 [build] Remove sbt-based build system
+    - #2343 [docs] Keep output html filename consistent with exercise name
+  * features:
+    - #2348 Extend embed.component to let multiple objects be rendered in multiple divs 
+    - #2354 Add support for `styles` in google map `map_options`
+  * bugfixes:
+    - #2356 [bokehjs] Force glyphs to always beginpath before rendering
+    - #2357 Crosshairtool lacks "dimension" property
+  * tasks:
+    - #2358 [examples] Added palettes example to gallery
+  * bugfixes:
+    - #2365 [examples] Compat/seaborn/sinerror.py is broken
+  * features:
+    - #2371 [docs] Add mailing list to gmane
+  * tasks:
+    - #2400 [branches] Extend embed.component to let multiple objects be rendered in multiple divs
+    - #2403 [branches] Added test, improved conditionals
+    - #2404 [branches] Added error prompt wth message
+    - #2406 [branches] Added document support alongside plotobject
+    - #2407 [branches] Line too long
+
 2015-05-15    0.9.0:
 --------------------
   * Callback Action, serverless interactivity in static plots
