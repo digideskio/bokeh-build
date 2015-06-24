@@ -25,7 +25,7 @@ do
 done
 
 # main
-if [[ -z "$dtag" && ! -z "$ptag" && ! -z "$rtag"]]; then
+if [[ -z "$dtag" && ! -z "$ptag" && ! -z "$rtag" ]]; then
     echo "You have triggered the release process"
 
     # create a new branch
@@ -56,7 +56,7 @@ if [[ -z "$dtag" && ! -z "$ptag" && ! -z "$rtag"]]; then
     git tag -a $rtag -m "Release $rtag".
     git push origin $rtag
 
-elif [[ ! -z "$dtag" && -z "$ptag" && -z "$rtag"]]; then
+elif [[ ! -z "$dtag" && -z "$ptag" && -z "$rtag" ]]; then
     echo "You have triggered the devel build process"
 
     # get the HEAD commit hash
